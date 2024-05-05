@@ -13,6 +13,7 @@
               <h5 class="visit-title">{{ visit.castleName }}</h5>
               <p class="visit-text">{{ visit.shortDesc }}</p>
               <p class="visit-region"><small class="text-muted" >{{ visit.region }}</small></p>
+              <!-- <p class="a-thing"> more info </p> -->
               <i type="button" class="pi pi-trash" @click="deleteVisit()"></i>
             </div>
           </div>
@@ -85,7 +86,7 @@ export default {
 .visit-text,
 .visit-region{
   font-style: italic;
-  color: white;
+  color: black;
   
 }
 
@@ -112,12 +113,21 @@ export default {
   border-radius: 10px;
   background-color: #8BBAB1;
   box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.4);
-  background-image: url('https://slack-imgs.com/?c=1&o1=ro.gu&url=https%3A%2F%2Ffiles.oaiusercontent.com%2Ffile-jqG8nxEUHnn9Uk9ujKaSKS51%3Fse%3D2024-04-17T22%253A02%253A42Z%26sp%3Dr%26sv%3D2021-08-06%26sr%3Db%26rscc%3Dmax-age%253D31536000%252C%2520immutable%26rscd%3Dattachment%253B%2520filename%253D9156c601-a3dc-4fe2-8ce6-256363e582ac.webp%26sig%3D22sB%252BIT1C1Qhg6FlGS%2Fa5nirJ3I7yfuPawwm9mzGnZE%253D');
-  background-position: 157%;
-  background-position-y: 30%;
+  background-image: url('https://media.istockphoto.com/id/1464221254/vector/cherry-blossoms-landscape-illustration-backgrounds-for-design-abstract-illustration-and.jpg?s=612x612&w=0&k=20&c=5H8IKnKSiVWa0OZG1GX3RJ1EylU-KocUShtYSPccjPw=');
+  /* background-image: url('https://media3.giphy.com/media/Vdn2fjMv5ASxI3rZ3S/200w.gif?cid=6c09b952jy4l5n4usq9hq9hsv9rjlzsj7bb3tca0o058nvcv&ep=v1_gifs_search&rid=200w.gif&ct=g'); */
+  /* background-image: url('https://static.vecteezy.com/system/resources/thumbnails/016/471/494/small_2x/sakura-branch-cherry-blossoming-flower-tree-japan-spring-flowers-background-vector.jpg'); */
+  background-position: 100%;
+  background-position-y: 0%;
 }
 
 .card:hover {
   transform: scale(1.015);
+  
 }
+
+.img {
+  opacity: 20%;
+}
+
+
 </style>
