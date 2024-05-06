@@ -101,9 +101,15 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100%; /* Ensure full height */
+  margin-top: 10px;
 }
 
 
+
+.carousel-caption h1 {
+  white-space: nowrap;
+  margin-bottom: 10px; /* Adjust as needed */
+}
 
 h1 {
   font-size: 4em;
@@ -116,6 +122,10 @@ h1 {
 .carousel-item {
   height: 400px; /* Adjust the height as needed */
   position: relative; /* Ensure positioning context for absolute positioning */
+}
+
+.carousel-caption button {
+  margin-top: 10px; /* Adjust as needed */
 }
 
  .home {
@@ -138,7 +148,7 @@ h1 {
   color: #193144;
   border:none;
   font-style: italic;
-  margin-bottom: 10em;
+  
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
 }
 
