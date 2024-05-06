@@ -2,7 +2,7 @@
     <div class="premium">
     <h2 class = "join"> Join the Clan Today! </h2>
     <router-link v-bind:to="{ name: 'register' }" class="nav-link"><img src="../assets/Foxtrots- Screenshots/Dashboard.png" alt="logo" width="125" height="125" class="premium-dash" /> </router-link>
-    <h6 class="sign-up-text"> Sign up to be able  to add castles to a personalized dashboard!</h6>
+    <h6 class="sign-up-text"> Sign up to be able to add castles to a personalized dashboard!</h6>
     </div>  
   </template>
 
@@ -27,21 +27,31 @@
     font-size: 5rem;
     font-style: italic;
     text-shadow: 2px 2px 4px black;
+    margin-bottom: 100px; /* Adjust margin as needed */
 }
 .sign-up-text{
   font-size: 1.3rem;
   font-style: italic;
   text-shadow: 2px 2px 4px black;
+  margin-top: 100px; /* Adjust margin as needed */
 }
 .premium-dash {
-    display: flex;
-    justify-self: center;
-    margin-top: 2rem;
-    border-radius: 5px;
-    transform: scale(4);
-    border: solid .75px #8BBAB1;
-    width: 17rem;
-    
-   
+  display: flex;
+  justify-self: center;
+  margin-top: 2rem;
+  border-radius: 5px;
+  transform: scale(4);
+  border: solid .75px #8BBAB1;
+  width: 17rem;
+}
+
+.h6 {
+  margin-bottom: 10em;
+  padding: 100px;
+}
+
+.img {
+  padding: 20px;
+  margin-bottom: 10em;
 }
 </style>

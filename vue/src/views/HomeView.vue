@@ -8,7 +8,7 @@
       </router-link>
       </div>
   </div> -->
-  <!-- <Premium/> -->
+  
 
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -24,8 +24,8 @@
         <img src="https://www.wendywutours.co.nz/resource/upload/900/banner-osaka-castle.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block overlay">
           <div class="overlay">
-            <!-- <h1>Unlock the Majesty of Japan's Castles</h1> -->
-            <h1>Japan's Castles</h1>
+            <h1>Unlock the Majesty of Japan's Castles</h1>
+            <!-- <h1>Japan's Castles</h1> -->
             <router-link v-bind:to="{ name: 'castles' }">
               <button type="button" class="btn btn-primary">Explore!</button>
             </router-link>
@@ -76,6 +76,8 @@
 
   </div>
 </div>
+
+<Premium/>
 </template>
 
 <script>
@@ -169,6 +171,24 @@ h1 {
   transform: translate(-50%, -50%);
 }
   
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 32px;
+  text-align: center;
+  font-size: 50px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  border-radius: 25px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #3e8e41;
+  color: #193144;
+}
 
 
 
