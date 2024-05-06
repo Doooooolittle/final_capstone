@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <!-- <div class="home">
 
     <div class="overlay">
       <h1>Unlock the Majesty of Japan's Castles </h1>
@@ -7,8 +7,75 @@
         <button type="button" class="btn btn-primary">Explore!</button>
       </router-link>
       </div>
+  </div> -->
+  <!-- <Premium/> -->
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <Premium/>
+
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active">
+      <div class="image-container">
+        <img src="https://www.wendywutours.co.nz/resource/upload/900/banner-osaka-castle.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block overlay">
+          <div class="overlay">
+            <!-- <h1>Unlock the Majesty of Japan's Castles</h1> -->
+            <h1>Japan's Castles</h1>
+            <router-link v-bind:to="{ name: 'castles' }">
+              <button type="button" class="btn btn-primary">Explore!</button>
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://cdn.vox-cdn.com/thumbor/3n0sYZ7eyLb02o64_23RygDsbYU=/0x756:5040x3276/fit-in/1200x600/cdn.vox-cdn.com/uploads/chorus_asset/file/25237910/riccardo_bergamini_O2yNzXdqOu0_unsplash.jpg" class="d-block w-100" alt="...">
+      <div class="image-container">
+        <div class="carousel-caption d-none d-md-block overlay">
+          <div class="overlay">
+            <h1>Food? </h1>
+            <router-link v-bind:to="{ name: 'castles' }">
+              <button type="button" class="btn btn-primary">Explore!</button>
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+    <div class="carousel-item">
+      <img src="https://www.japantimes.co.jp/uploads/imported_images/uploads/2022/10/np_file_187800.jpeg" class="d-block w-100" alt="...">
+      <div class="image-container">
+        <div class="carousel-caption d-none d-md-block overlay">
+          <div class="overlay">
+            <h1>Theme Parks</h1>
+            <router-link v-bind:to="{ name: 'castles' }">
+              <button type="button" class="btn btn-primary">Explore!</button>
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</div>
 </template>
 
 <script>
@@ -21,23 +88,45 @@ export default {
 </script>
 
 <style scoped>
+.carousel { 
+  height: 85vh;
+  width: 100vw; 
+  object-fit: cover;
+  display: flex;
+}
+
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure full height */
+}
+
+
+
 h1 {
   font-size: 4em;
   font-style: italic;
   color: white;
-  margin-bottom: 22rem;
   text-shadow: 2px 2px 4px black;
+  display: inline; 
 }
 
-.home {
-  height: 100vh;
+.carousel-item {
+  height: 400px; /* Adjust the height as needed */
+  position: relative; /* Ensure positioning context for absolute positioning */
+}
+
+ .home {
+  /* height: 100vh;
   width: 100vw;
   position: relative;
   background-size: cover;
-  background-position: 50%;
-  background-image: url('https://www.wendywutours.co.nz/resource/upload/900/banner-osaka-castle.jpg');
-  /* background-image: url('https://media3.giphy.com/media/Vdn2fjMv5ASxI3rZ3S/200w.gif?cid=6c09b952jy4l5n4usq9hq9hsv9rjlzsj7bb3tca0o058nvcv&ep=v1_gifs_search&rid=200w.gif&ct=g'); */
-  box-shadow: 0 0 300px rgb(0, 0, 0) inset;
+  background-position: 50%; */
+  /* background-image: url('https://www.wendywutours.co.nz/resource/upload/900/banner-osaka-castle.jpg'); */
+  /* background-image: url('https://media3.giphy.com/media/Vdn2fjMv5ASxI3rZ3S/200w.gif?cid=6c09b952jy4l5n4usq9hq9hsv9rjlzsj7bb3tca0o058nvcv&ep=v1_gifs_search&rid=200w.gif&ct=g');
+  box-shadow: 0 0 300px rgb(0, 0, 0) inset; */
 }
 
 .btn-primary {
@@ -49,7 +138,7 @@ h1 {
   color: #193144;
   border:none;
   font-style: italic;
-  margin-bottom: 6rem;
+  margin-bottom: 10em;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -62,23 +151,16 @@ h1 {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
 }
 
-.text {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  
-}
 
 .overlay {
   position: absolute;
-  height: 100vh;
-  width: 100vw;
-  background: rgba(0, 0, 0, 0.37);
-  color: rgb(0, 0, 0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+  
+
+
+
+
 </style>
