@@ -107,7 +107,6 @@ export default {
 }
 
 
-
 .carousel-caption h1 {
   white-space: nowrap;
   margin-bottom: 10px; /* Adjust as needed */
@@ -173,7 +172,7 @@ h1 {
   
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #ddd;
+  background-color: #fdb6b7;
   border: none;
   color: black;
   padding: 32px;
@@ -186,8 +185,8 @@ h1 {
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-  background-color: #3e8e41;
-  color: #193144;
+  background-color: salmon;
+  color: salmon;
 }
 
 
