@@ -158,3 +158,11 @@ insert into img (castle_id, img_name, img_path) values(22, 'Zakimi_2', 'https://
 insert into img (castle_id, img_name, img_path) values(22, 'Zakimi_3', 'https://filmoffice.ocvb.or.jp/wp-content/uploads/2018/02/0283_001.jpg');
 insert into img (castle_id, img_name, img_path) values(22, 'Zakimi_4', 'https://visitokinawajapan.com/wp-content/themes/visit-okinawa_multi-language/lang/en/assets/img/discover/149/di149_03_zakimi-castle-ruins-walls.webp');
 
+insert into park (region, map_location, park_name, park_banner_photo, short_desc, long_desc, address);
+values('Kantao','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12971.161105191342!2d139.86133988715824!3d35.632896400000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60187d03114737b3%3A0xe4d93636d509d3cb!2sTokyo%20Disneyland!5e0!3m2!1sen!2sus!4v1715804774937!5m2!1sen!2sus', 'Tokyo Disneyland', 'https://res-3.cloudinary.com/jnto/image/upload/w_2064,h_1300,c_fill,f_auto,fl_lossy,q_auto/v1645708829/chiba/H_00336_001', 'Where dreams come to life in the heart of Japan', 'Inspired by the original Disneyland in California, it offers an enchanting experience with iconic Disney characters, thrilling attractions, dazzling parades, and whimsical entertainment for visitors of all ages. Immerse yourself in the enchanting world of Disney, where fantasy and adventure await around every corner.', 'Tokyo Disneyland, 1-1 Maihama, Urayasu, Chiba 279-0031, Japan');
+
+insert into park_img (park_id, img_name, img_path) values(1, 'tokyo_disneyland_1', 'https://www.neverendingvoyage.com/wp-content/uploads/2019/11/tokyo-disneyland-rides-13.jpg');
+insert into park_img (park_id, img_name, img_path) values(1, 'tokyo_disneyland_2', 'https://www.japantimes.co.jp/uploads/imported_images/uploads/2023/04/np_file_221545.jpeg');
+insert into park_img (park_id, img_name, img_path) values(1, 'tokyo_disneyland_3', 'https://www.travelandleisure.com/thmb/uzxWistm2m6a9i90jbghhp8pPcQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tokyo-disneyland-castle-DISEXP0920-ba276e217ec1414985f3a824ca54c8ef.jpg');
+insert into park_img (park_id, img_name, img_path) values(1, 'tokyo_disneyland_4', 'https://www.micechat.com/wp-content/uploads/2023/08/Shanghai-Disneyland-Zootopia-Land-by-Day.jpg');
+
