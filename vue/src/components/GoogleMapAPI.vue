@@ -1,7 +1,7 @@
 <template>
     <div class="mapWhole">
         <div class="mapApi">
-            <GoogleMap ref="mapRef" class="map" api-key="AIzaSyC4m-CO1YR4pNWx67QuQG6FsNqgjMIPR-s"
+            <!-- <GoogleMap ref="mapRef" class="map" api-key="AIzaSyC4m-CO1YR4pNWx67QuQG6FsNqgjMIPR-s"
                 style="width:90%;height:80%" :center="center" :zoom="5.5">
                 <Marker :options="{ position: { lat: 35.014033, lng: 135.747825 }, visible: true, }"/>
                 <Marker :options="{ position: { lat: 34.839317, lng: 134.692832 }, visible: true, }"/>
@@ -25,7 +25,7 @@
                 <Marker :options="{ position: { lat: 35.360812, lng: 137.451786 }, visible: true, }"/>
                 <Marker :options="{ position: { lat: 33.218973, lng: 132.564898 }, visible: true, }"/>
                 <Marker :options="{ position: { lat: 26.405427, lng: 127.741224 }, visible: true, }"/>
-            </GoogleMap>
+            </GoogleMap> -->
         </div>
     </div>
 </template>

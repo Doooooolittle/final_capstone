@@ -15,8 +15,7 @@
                 </ul>
             </div>
 
-            <button type="button" class="btn btn-outline-hokkaido" v-bind="filter.region"
-                @click="hokkaido">Hokkaido</button>
+            <button type="button" class="btn btn-outline-hokkaido" v-bind="filter.region" @click="hokkaido">Hokkaido</button>
             <button type="button" class="btn btn-outline-tohoku" v-bind="filter.region" @click="tohoku">Tohoku</button>
             <button type="button" class="btn btn-outline-kanto" v-bind="filter.region" @click="kanto">Kanto</button>
             <button type="button" class="btn btn-outline-chubu" v-bind="filter.region" @click="chubu">Chubu</button>
